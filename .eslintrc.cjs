@@ -22,7 +22,10 @@ module.exports = {
   ignorePatterns: ['!**/.server', '!**/.client'],
 
   // Base config
-  extends: ["eslint:recommended"],
+  extends: [
+    '@thoughtbot/eslint-config',
+    '@thoughtbot/eslint-config/typescript',
+  ],
 
   overrides: [
     // React
