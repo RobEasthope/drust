@@ -1,6 +1,6 @@
 import type { MetaFunction } from "@remix-run/node";
-import { compile } from "@mdx-js/mdx";
 import Markdown from "~/content/cs2eo.mdx";
+import { MDXProvider } from "@mdx-js/react";
 
 export const meta: MetaFunction = () => {
   return [
@@ -14,9 +14,9 @@ export default function Index() {
     <div className="font-sans p-4">
       <section className="font-sans p-4">
         <h1 className="text-3xl">MDX prototype</h1>
-        <div>
+        <MDXProvider>
           <Markdown />
-        </div>
+        </MDXProvider>
       </section>
     </div>
   );
