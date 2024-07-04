@@ -1,0 +1,32 @@
+---
+title: "Founders Factory"
+description: "Gatsby.js & StoryBlok marketing site"
+url: "/founders-factory/"
+projectUrlTitle: "foundersfactory.com"
+projectUrl: "https://www.foundersfactory.com"
+writtenDate: "Spring 2020 & Spring-Summer 2024"
+startDate: "2020-03-02"
+endDate: "2020-04-24"
+client: "Founder Factory"
+clientUrl: "https://foundersfactory.com/"
+tools: "Gatsby.js, StoryBlok, Styled Components, Storybook"
+---
+
+import Gallery from "../../components/blocks/Gallery/Gallery.astro";
+
+import asset from "../../assets/founders-factory/Work with us.png";
+
+The Founders Factory project was a full refactor of an existing three year old site Gatsby.js site. This included:
+
+- Switching to us StoryBlok headless CMS from a combination of Contentful and static content
+- Rebuilding the front end code into a modular component system in parallel with StoryBlok's architecture
+- Restyling and refactoring the codebase to use CSS-in-JS Styled Components and Rebass primitives components
+- Individual component theming with CSM integration
+- Storybook component library
+- Mailchimp newsletter signup functionality
+
+<Gallery
+  images={[{ image: asset, alt: "Founders Factory site" }]}
+  columns={1}
+  className="mt-2"
+/>

@@ -1,0 +1,31 @@
+---
+title: "My Art Broker"
+description: "Sanity x Next.js"
+url: "/my-art-broker/"
+projectUrlTitle: "myartbroker.com"
+projectUrl: "https://myartbroker.com/"
+writtenDate: "Spring 2022"
+startDate: "2022-03-14"
+endDate: "2022-04-01"
+client: "My Art Broker"
+clientUrl: "https://myartbroker.com/"
+tools: "Next.js, Sanity, Typescript, Storybook, Algolia"
+---
+
+import Gallery from "../../components/blocks/Gallery/Gallery.astro";
+import landingAsset from "../../assets/my-art-broker/my-art-broker-screenshot.png";
+
+MyArtBroker is the worlds only private sale network dedicated to blue-chip Prints & editions. It uses it's extensive databases and private network to allows it's brokers to source and sell almost any authenticated edition of urban and contemporary art.
+
+I was brought in to work on their state of the art Next.js and Sanity site fixing post-launch bugs, improve build times, and add extra functionality.
+
+<Gallery
+  images={[
+    {
+      image: landingAsset,
+      alt: "My Art Broker landing page",
+    },
+  ]}
+  columns={1}
+  className="mt-2"
+/>

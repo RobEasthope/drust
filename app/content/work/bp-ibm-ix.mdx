@@ -1,0 +1,29 @@
+---
+title: "BP/IBM iX"
+description: "Gatsby.js microsite"
+url: "/bp-ibm-ix/"
+writtenDate: "Winter 2017"
+startDate: "2017-12-04"
+endDate: "2017-12-15"
+client: "IBM iX"
+clientUrl: "https://www.ibm.com/services/ibmix/"
+tools: "React, Gatsby.js, CSS Modules"
+---
+
+import Gallery from "../../components/blocks/Gallery/Gallery.astro";
+
+import landingAsset from "../../assets/bp-ibm-ix/Portfolio Media Screenshot Jan 21.jpg";
+
+The BP/IBM iX project is a static Gatsby.js React site built to help pitch BP as the prime candidate for over £500m of work.
+
+I was brought in during the final phase to help the IBM iX team perfect the pitch website to BP and worked in full continuous delivery crunch mode to add the last minute changes and design updates.
+
+<Gallery
+  images={[{ image: landingAsset, alt: "BP pitch landing page" }]}
+  columns={1}
+  className="mt-2"
+/>
+
+Utilising the latest React technology to create a blazing fast static site with Gatsby.js, the app was styled with a mix of styled-components and CSS Modules.
+
+The entire app is IE10 compatible to work on BP's internal IT infrastructure.

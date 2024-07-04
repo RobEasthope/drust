@@ -1,0 +1,42 @@
+---
+title: "AJ Tracey: Flu Game"
+description: "Spotify x AJ Tracey"
+url: "/aj-tracey-flu-game/"
+projectUrlTitle: "ajtracey.withspotify.com"
+projectUrl: "https://ajtracey.withspotify.com/"
+writtenDate: "Spring 2021"
+startDate: "2021-03-22"
+endDate: "2021-04-23"
+client: "Spotify"
+clientUrl: "https://www.spotify.com/"
+agency: "Stink Studios"
+agencyUrl: "https://www.stinkstudios.com/"
+tools: "React, Redux Toolkit, GSAP Animations, WebGL, Three.js, Styled Components"
+---
+
+import Gallery from "../../components/blocks/Gallery/Gallery.astro";
+
+import introAsset from "../../assets/aj-tracey-flu-game/AJT intro.png";
+import scoreAsset from "../../assets/aj-tracey-flu-game/AJT score.png";
+import gameOverAsset from "../../assets/aj-tracey-flu-game/AJT Game Over.png";
+
+Flu Game: The Game is a promotional campaign for AJ Tracey's album 'Flu Game', which itself is a basketball reference to a famous match where Michael Jordan played with the flu and still helped his team win.
+
+<Gallery
+  images={[{ image: introAsset, alt: "AJ Tracey: Flu Game start screen" }]}
+  columns={1}
+  className="mt-2"
+/>
+
+The game get fans shooting virtual hoops over 16 levels, with various characters (and a jumping pizza) trying to get in the way. Tracey pops up with encouragement, and players can listen to the album's official playlist while playing.
+
+<Gallery
+  images={[
+    { image: scoreAsset, alt: "AJ Tracey: Flu Game score UI" },
+    { image: gameOverAsset, alt: "AJ Tracey: Flu Game game over screen" },
+  ]}
+  columns={2}
+  className="mt-2"
+/>
+
+I worked on the game and overall site UI components, game logic, and audio prompts while other developers handled the gameplay elements using WebGL and Canvas APIs.

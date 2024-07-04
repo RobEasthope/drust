@@ -1,0 +1,29 @@
+---
+title: "Mediablaze"
+description: "Next generation website for Mediablaze"
+url: "/mediablaze/"
+projectUrlTitle: "mediablaze.com"
+projectUrl: "https://mediablaze.com/"
+writtenDate: "Summer 2020"
+startDate: "2020-07-27"
+endDate: "2020-10-07"
+client: "Mediablaze"
+clientUrl: "https://mediablaze.com/"
+tools: "Gatsby.js, StoryBlok, Typescript, Storybook, Styled Components"
+---
+
+import Gallery from "../../components/blocks/Gallery/Gallery.astro";
+
+import landingAsset from "../../assets/mediablaze/Media Portfolio Jan 15 Screenshot.png";
+
+Mediablaze is a next-gen site built with Gatsby.js with the content served from a headless Storyblok CMS.
+
+The site uses a component based architecture, allowing users to create complex, customised pages at will. Users can drag and drop components around the page without the need for developer support
+
+Coded in TypeScript to create a solid, developer friendly codebase, each component was modelled in Storybook to give designers and content creators a preview of each component.
+
+<Gallery
+  images={[{ image: landingAsset, alt: "Mediablaze landing page" }]}
+  columns={1}
+  className="mt-2"
+/>

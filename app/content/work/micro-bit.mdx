@@ -1,0 +1,29 @@
+---
+title: "Micro:bit"
+description: "Parallax animations proof of concept"
+url: "/micro-bit/"
+writtenDate: "Spring 2019"
+startDate: "2019-05-13"
+endDate: "2019-05-17"
+client: "BBC"
+clientUrl: "https://www.bbc.co.uk"
+agency: "Perfect Day"
+agencyUrl: "http://perfectdaylondon.com/"
+tools: "GSAP, ScrollMagic, HTML, CSS, JavaScript"
+---
+
+import Gallery from "../../components/blocks/Gallery/Gallery.astro";
+import landingAsset from "../../assets/micro-bit/Portfolio Home.png";
+import MuxVideo from "@/components/blocks/MuxVideo/MuxVideo.astro";
+
+Micro:bit is a single page design and development prototype for integration into the rebrand of the BBC's 'Do your bit' Micro:bit challenge.
+
+Built in three days, it is built showcase the design, test how the the front end code would be built into the BBC's custom CMS, and to test performance on the parallax elements of design.
+
+<MuxVideo videoID="DTMA02ndODfpgVjSzi00B4EYHLpHJOhW5Z" />
+
+<Gallery
+  images={[{ image: landingAsset, alt: "Micro:bit landing page" }]}
+  columns={1}
+  className="mt-2"
+/>

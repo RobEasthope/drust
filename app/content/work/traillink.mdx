@@ -1,0 +1,32 @@
+---
+title: "TrailLink"
+description: "Pug.js templates"
+url: "/traillink/"
+projectUrl: "https://www.traillink.com/"
+writtenDate: "Winter 2016"
+startDate: "2016-01-04"
+endDate: "2016-02-12"
+client: "TrailLink"
+clientUrl: "https://www.traillink.com/"
+agency: "Pixelled Eggs"
+agencyUrl: "https://www.pixeledeggs.com/"
+tools: "Jade, SCSS, JavaScript"
+---
+
+import Gallery from "../../components/blocks/Gallery/Gallery.astro";
+
+import landingAsset from "../../assets/traillink/TrailLink portfolio.png";
+
+TrailLink is part of the US Rails-To-Trails Conservancy which is opening up unused American railway lines to create a network of trails across the United States.
+
+Pixeled Eggs was given a brief to design a brand new responsive website for TrailLink and build a modular static version of the website to be handed off to a backend development company.
+
+Designed from the start around atomic design principles each section of the site was built to be a independent module that could reused across the entire site.
+
+To assist this aim and ensure a speedy and smooth development, the site was built with Jade (Now renamed to Pug.js) to allow rapid templating.
+
+<Gallery
+  images={[{ image: landingAsset, alt: "Traillink landing page" }]}
+  columns={1}
+  className="mt-2"
+/>

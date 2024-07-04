@@ -1,0 +1,31 @@
+---
+title: "Haygarth"
+description: "Laravel blade templating"
+url: "/haygarth/"
+projectUrlTitle: "haygarth.co.uk"
+projectUrl: "https://haygarth.co.uk/"
+writtenDate: "Summer 2014"
+startDate: "2014-04-07"
+endDate: "2014-05-02"
+client: "Haygarth"
+clientUrl: "https://haygarth.co.uk/"
+tools: "HTML, SCSS, PHP, Laravel"
+---
+
+import Gallery from "../../components/blocks/Gallery/Gallery.astro";
+
+import landingAsset from "../../assets/haygarth/Haygarth landing page.jpg";
+import spriteAsset from "../../assets/haygarth/Haygarth Sprite Page.jpg";
+
+The Haygarth project was a full stack redesign of Haygarth's company portfolio and blog. The brief was to build a fully responsive site which showcased Haygarth's creative work.
+
+I built the majority of the front end elements as the rest of the development team and striped out the old Drupal based CMS replaced with a bespoke Laravel CMS based around simplicity and ease of use.
+
+<Gallery
+  images={[
+    { image: landingAsset, alt: "Haygarth landing page" },
+    { image: spriteAsset, alt: "Haygarth project example page" },
+  ]}
+  columns={1}
+  className="mt-2"
+/>

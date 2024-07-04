@@ -1,0 +1,34 @@
+---
+title: "Sony O2 Demo Bay"
+description: "Instore retail app"
+url: "/sony-o2-demo-bay/"
+writtenDate: "2014 - 2015"
+startDate: "2014-03-03"
+endDate: "2015-09-25"
+client: "Sony"
+clientUrl: "https://www.sony.co.uk/"
+agency: "Haygarth"
+agencyUrl: "https://haygarth.co.uk/"
+---
+
+import Gallery from "../../components/blocks/Gallery/Gallery.astro";
+
+import carouselAsset from "../../assets/sony-o2-demo-bay/Demo Bay Carousel.jpg";
+import z2Asset from "../../assets/sony-o2-demo-bay/Demo Bay Z2.jpg";
+
+The Sony Demo Bay was a PPOS touchscreen unit serving O2 retails customers information on Sony Mobile products.
+
+Developed at Haygarth, the Demo Bay brought together digital content and physical interaction using allowing customers to navigate either via TV touch screen controls or by directly picking up in store display phones to learn information about the product.
+
+<Gallery
+  images={[
+    { image: carouselAsset, alt: "Sony o2 demo bay carousel" },
+    { image: z2Asset, alt: "Sony o2 demo bay Z2 page" },
+  ]}
+  columns={1}
+  className="mt-2"
+/>
+
+Physical interactions were handled with Python code and the app was deployed nationwide to O2 stores via the Scala Digital Signage network.
+
+The app was later refactored into an Angular.js single page app in preparation for integration into the Haygarth Digital Room and for future client projects.
