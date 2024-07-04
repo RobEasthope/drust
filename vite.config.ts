@@ -4,6 +4,9 @@ import tsconfigPaths from "vite-tsconfig-paths";
 import mdx from "@mdx-js/rollup";
 
 export default defineConfig({
+  server: {
+    port: 3000,
+  },
   plugins: [
     mdx(),
     remix({
