@@ -10,6 +10,8 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Index() {
+  console.log(Markdown);
+
   return (
     <div className="font-sans p-4">
       <section className="font-sans p-4">
