@@ -10,8 +10,8 @@ import {
 } from '@remix-run/react'
 
 import {themePreferenceCookie} from '~/cookies'
-import {getBodyClassNames} from '~/lib/getBodyClassNames'
-import styles from '~/tailwind.css?url'
+import {getBodyClassNames} from '~/utils/getBodyClassNames'
+import styles from '~/root.css?url'
 import {themePreference} from '~/types/themePreference'
 
 export const links: LinksFunction = () => {

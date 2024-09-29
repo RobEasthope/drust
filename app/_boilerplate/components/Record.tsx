@@ -4,7 +4,7 @@ import {LikeDislike} from '~/components/LikeDislike'
 import {RecordCover} from '~/components/RecordCover'
 import {SanityContent} from '~/components/SanityContent'
 import {Title} from '~/components/Title'
-import {secondsToMinutes} from '~/lib/secondsToMinutes'
+import {secondsToMinutes} from '~/utils/secondsToMinutes'
 import type {RecordDocument} from '~/types/record'
 
 type RecordProps = {
