@@ -1,4 +1,4 @@
 export default function IndexRoute() {
 
-  return null;
+  return <div>Drust</div>;
 }
