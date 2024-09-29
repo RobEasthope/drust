@@ -8,7 +8,8 @@
     "dev": "remix vite:dev",
     "format": "npx prettier --write .",
     "lint": "eslint . --fix",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "prepare": "husky"
   },
   "dependencies": {
     "@faker-js/faker": "^8.4.1",
@@ -52,6 +53,7 @@
     "autoprefixer": "^10.4.20",
     "eslint": "^8.57.0",
     "eslint-plugin-simple-import-sort": "^12.1.1",
+    "husky": "^9.1.6",
     "postcss": "^8.4.42",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.6",
