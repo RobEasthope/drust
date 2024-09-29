@@ -1,10 +1,10 @@
-import {useEffect, useState} from 'react'
+import { useEffect, useState } from "react";
 
 export function ExitPreview() {
-  const [inIframe, setInIframe] = useState(true)
+  const [inIframe, setInIframe] = useState(true);
   useEffect(() => {
-    setInIframe(window.self !== window.top)
-  }, [])
+    setInIframe(window.self !== window.top);
+  }, []);
 
   return inIframe ? null : (
     <div className="pointer-events-none fixed inset-0 flex h-screen w-screen items-end justify-end p-2">
@@ -14,12 +14,12 @@ export function ExitPreview() {
         method="POST"
       >
         <button
-          className="bg-black p-4 leading-none font-bold text-white"
+          className="bg-black p-4 font-bold leading-none text-white"
           type="submit"
         >
           Exit Preview Mode
         </button>
       </form>
     </div>
-  )
+  );
 }
