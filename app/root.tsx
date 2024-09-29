@@ -10,9 +10,9 @@ import {
 } from "@remix-run/react";
 
 import { themePreferenceCookie } from "~/cookies";
-import { getBodyClassNames } from "~/utils/getBodyClassNames";
 import styles from "~/root.css?url";
 import { themePreference } from "~/types/themePreference";
+import { getBodyClassNames } from "~/utils/getBodyClassNames";
 
 export const links: LinksFunction = () => {
   return [
@@ -46,9 +46,9 @@ export const loader = async ({ request }: LoaderFunctionArgs) => {
     theme,
     bodyClassNames,
     ENV: {
-      VITE_SANITY_PROJECT_ID: import.meta.env.VITE_SANITY_PROJECT_ID!,
-      VITE_SANITY_DATASET: import.meta.env.VITE_SANITY_DATASET!,
-      VITE_SANITY_API_VERSION: import.meta.env.VITE_SANITY_API_VERSION!,
+      VITE_SANITY_PROJECT_ID: import.meta.env.VITE_SANITY_PROJECT_ID,
+      VITE_SANITY_DATASET: import.meta.env.VITE_SANITY_DATASET,
+      VITE_SANITY_API_VERSION: import.meta.env.VITE_SANITY_API_VERSION,
     },
   });
 };
