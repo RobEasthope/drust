@@ -29,6 +29,7 @@ module.exports = {
     "vercel/",
     "pnpm-lock.yaml",
     ".gitignore",
+    "app/_boilerplate/",
     "!.storybook/",
   ],
 };
