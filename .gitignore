@@ -88,3 +88,6 @@ node_modules/
 
 # Vercel
 .vercel
+
+# Storybook
+*storybook.log
