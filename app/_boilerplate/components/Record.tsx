@@ -1,24 +1,24 @@
-import {createDataAttribute} from '@sanity/visual-editing/remix'
+import { createDataAttribute } from "@sanity/visual-editing/remix";
 
-import {LikeDislike} from '~/components/LikeDislike'
-import {RecordCover} from '~/components/RecordCover'
-import {SanityContent} from '~/components/SanityContent'
-import {Title} from '~/components/Title'
-import {secondsToMinutes} from '~/utils/secondsToMinutes'
-import type {RecordDocument} from '~/types/record'
+import { LikeDislike } from "~/components/LikeDislike";
+import { RecordCover } from "~/components/RecordCover";
+import { SanityContent } from "~/components/SanityContent";
+import { Title } from "~/components/Title";
+import { secondsToMinutes } from "~/utils/secondsToMinutes";
+import type { RecordDocument } from "~/types/record";
 
 type RecordProps = {
-  data: RecordDocument
-}
+  data: RecordDocument;
+};
 
-export function Record({data}: RecordProps) {
-  const {_id, title, artist, content, image, tracks, likes, dislikes} = data
+export function Record({ data }: RecordProps) {
+  const { _id, title, artist, content, image, tracks, likes, dislikes } = data;
   const imageDataAttribute = createDataAttribute({
     id: _id,
-    path: ['image'],
-    baseUrl: '/studio',
-    type: 'record',
-  }).toString()
+    path: ["image"],
+    baseUrl: "/studio",
+    type: "record",
+  }).toString();
 
   return (
     <article className="flex flex-col items-start gap-4 lg:flex-row lg:gap-12">
@@ -28,7 +28,7 @@ export function Record({data}: RecordProps) {
         </div>
         <LikeDislike id={_id} likes={likes} dislikes={dislikes} />
       </div>
-      <div className="flex flex-shrink-0 flex-col gap-4 lg:gap-6 lg:w-2/3">
+      <div className="flex flex-shrink-0 flex-col gap-4 lg:w-2/3 lg:gap-6">
         <header>
           {title ? <Title>{title}</Title> : null}
           {artist ? (
@@ -62,5 +62,5 @@ export function Record({data}: RecordProps) {
         ) : null}
       </div>
     </article>
-  )
+  );
 }

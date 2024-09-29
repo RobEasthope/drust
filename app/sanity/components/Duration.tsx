@@ -1,7 +1,7 @@
-import {Box, Code, Flex} from '@sanity/ui'
-import type {NumberInputProps} from 'sanity'
+import { Box, Code, Flex } from "@sanity/ui";
+import type { NumberInputProps } from "sanity";
 
-import {secondsToMinutes} from '~/utils/secondsToMinutes'
+import { secondsToMinutes } from "~/utils/secondsToMinutes";
 
 export default function Duration(props: NumberInputProps) {
   return (
@@ -11,5 +11,5 @@ export default function Duration(props: NumberInputProps) {
         <Code size={4}>{secondsToMinutes(props.value)}</Code>
       ) : null}
     </Flex>
-  )
+  );
 }
