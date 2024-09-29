@@ -8,7 +8,8 @@
     "dev": "remix vite:dev",
     "format": "npx prettier --write .",
     "lint": "eslint . --fix",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "prepare": "husky"
   },
   "dependencies": {
     "@faker-js/faker": "^8.4.1",
