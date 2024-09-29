@@ -4,6 +4,8 @@ import { vercelPreset } from "@vercel/remix/vite";
 import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 
+const isStorybook = process.argv[1]?.includes("storybook");
+
 installGlobals();
 
 export default defineConfig({
@@ -11,9 +13,10 @@ export default defineConfig({
     port: 3000,
   },
   plugins: [
-    remix({
-      presets: [vercelPreset()],
-    }),
+    !isStorybook &&
+      remix({
+        presets: [vercelPreset()],
+      }),
     tsconfigPaths(),
   ],
   optimizeDeps: {
