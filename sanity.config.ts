@@ -11,7 +11,7 @@ import { defaultDocumentNode, structure } from "~/sanity/sanity.structure";
 export default defineConfig({
   ...projectDetails(),
   name: "sanity-remix",
-  title: "Sanity Remix",
+  title: "Drust",
   plugins: [
     structureTool({ structure, defaultDocumentNode }),
     presentationTool({
