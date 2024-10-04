@@ -12,7 +12,9 @@
     "typecheck": "tsc --noEmit",
     "prepare": "husky",
     "storybook": "storybook dev -p 6006 --no-open",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "sanity-typegen": "npx sanity schema extract --path ./types/sanity.schema.json && npx sanity typegen generate",
+    "sanity-typegen:watch": "chokidar \"**/*.schema.ts\" \"**/*.queries.ts\" --ignore \"types/sanity.types.ts\" -c \"pnpm run sanity-typegen\""
   },
   "dependencies": {
     "@faker-js/faker": "^8.4.1",
