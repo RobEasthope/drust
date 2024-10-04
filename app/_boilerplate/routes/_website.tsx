@@ -15,7 +15,7 @@ import { Header } from "~/components/Header";
 import { Title } from "~/components/Title";
 import { loadQuery } from "~/sanity/loader.server";
 import { loadQueryOptions } from "~/sanity/loadQueryOptions.server";
-import { HOME_QUERY } from "~/sanity/queries";
+import { HOME_QUERY } from "~/sanity/sanity.queries";
 import type { HomeDocument } from "~/types/home";
 import { homeZ } from "~/types/home";
 import type { ThemePreference } from "~/types/themePreference";

@@ -13,7 +13,7 @@ import { OG_IMAGE_HEIGHT, OG_IMAGE_WIDTH } from "~/routes/resource.og";
 import { client } from "~/sanity/client";
 import { loadQuery } from "~/sanity/loader.server";
 import { loadQueryOptions } from "~/sanity/loadQueryOptions.server";
-import { RECORD_QUERY } from "~/sanity/queries";
+import { RECORD_QUERY } from "~/sanity/sanity.queries";
 import { type RecordDocument, recordZ } from "~/types/record";
 
 export const meta: MetaFunction<

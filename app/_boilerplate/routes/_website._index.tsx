@@ -6,7 +6,7 @@ import { Records } from "~/components/Records";
 import type { loader as layoutLoader } from "~/routes/_website";
 import { loadQuery } from "~/sanity/loader.server";
 import { loadQueryOptions } from "~/sanity/loadQueryOptions.server";
-import { RECORDS_QUERY } from "~/sanity/queries";
+import { RECORDS_QUERY } from "~/sanity/sanity.queries";
 import type { RecordStub } from "~/types/record";
 import { recordStubsZ } from "~/types/record";
 
