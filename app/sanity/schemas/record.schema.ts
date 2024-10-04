@@ -103,7 +103,22 @@ export const recordSchema = defineType({
       artist: "artist.name",
       media: "image",
     },
-    prepare({ title, artist, media }) {
+    prepare({
+      title,
+      artist,
+      media,
+    }: {
+      title: string;
+      artist: string;
+      media:
+        | string
+        | number
+        | boolean
+        | React.ReactElement
+        | Iterable<React.ReactNode>
+        | null
+        | undefined;
+    }) {
       return {
         title,
         subtitle: artist,

@@ -18,7 +18,6 @@ import { loadQueryOptions } from "~/sanity/api/loadQueryOptions.server";
 import { HOME_QUERY } from "~/sanity/sanity.queries";
 import type { HomeDocument } from "~/types/home";
 import { homeZ } from "~/types/home";
-import type { ThemePreference } from "~/types/themePreference";
 
 const SanityLiveMode = lazy(() =>
   import("~/components/SanityLiveMode").then((module) => ({
@@ -60,7 +59,6 @@ export default function Website() {
     initial,
   });
   const { pathname } = useLocation();
-  const { theme } = useOutletContext<{ theme: ThemePreference }>();
 
   return (
     <>
