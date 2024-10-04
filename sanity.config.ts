@@ -5,7 +5,7 @@ import { structureTool } from "sanity/structure";
 
 import { STUDIO_BASEPATH } from "~/sanity/constants";
 import { projectDetails } from "~/sanity/projectDetails";
-import schema from "~/sanity/schemaTypes";
+import schema from "~/sanity/schemaTypes/sanity.schemas";
 import { defaultDocumentNode, structure } from "~/sanity/structure";
 
 export default defineConfig({
