@@ -30,6 +30,7 @@ export default defineConfig({
             resolve: (doc) => ({
               locations: [
                 {
+                  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
                   title: doc?.title || "Untitled",
                   href: `/records/${doc?.slug}`,
                 },

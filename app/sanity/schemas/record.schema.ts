@@ -97,18 +97,4 @@ export const recordSchema = defineType({
       group: "tracks",
     }),
   ],
-  preview: {
-    select: {
-      title: "title",
-      artist: "artist.name",
-      media: "image",
-    },
-    prepare({ title, artist, media }) {
-      return {
-        title,
-        subtitle: artist,
-        media,
-      };
-    },
-  },
 });

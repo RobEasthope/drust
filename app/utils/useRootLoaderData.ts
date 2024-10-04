@@ -1,9 +1,11 @@
 import { useRouteLoaderData } from "@remix-run/react";
 
-import type { Loader as RootLoader } from "~/root";
+import type { loader as RootLoader } from "~/root";
 
 export function useRootLoaderData() {
-  const data = useRouteLoaderData<RootLoader>(`root`);
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+  const data = useRouteLoaderData<typeof RootLoader>(`root`);
 
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-return
   return data;
 }

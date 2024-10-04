@@ -9,10 +9,7 @@ import {
   useLoaderData,
 } from "@remix-run/react";
 
-import { themePreferenceCookie } from "~/cookies";
 import styles from "~/root.css?url";
-import { themePreference } from "~/types/themePreference";
-import { getBodyClassNames } from "~/utils/getBodyClassNames";
 
 export const links: LinksFunction = () => {
   return [
@@ -36,25 +33,18 @@ export const links: LinksFunction = () => {
 };
 
 export const loader = async ({ request }: LoaderFunctionArgs) => {
-  // Dark/light mode
-  const cookieHeader = request.headers.get("Cookie");
-  const cookieValue = (await themePreferenceCookie.parse(cookieHeader)) || {};
-  const theme = themePreference.parse(cookieValue.themePreference) || "light";
-  const bodyClassNames = getBodyClassNames(theme);
-
   return json({
-    theme,
-    bodyClassNames,
     ENV: {
-      VITE_SANITY_PROJECT_ID: import.meta.env.VITE_SANITY_PROJECT_ID,
-      VITE_SANITY_DATASET: import.meta.env.VITE_SANITY_DATASET,
-      VITE_SANITY_API_VERSION: import.meta.env.VITE_SANITY_API_VERSION,
+      VITE_SANITY_PROJECT_ID: import.meta.env.VITE_SANITY_PROJECT_ID as string,
+      VITE_SANITY_DATASET: import.meta.env.VITE_SANITY_DATASET as string,
+      VITE_SANITY_API_VERSION: import.meta.env
+        .VITE_SANITY_API_VERSION as string,
     },
   });
 };
 
 export default function App() {
-  const { theme, bodyClassNames, ENV } = useLoaderData<typeof loader>();
+  const { ENV } = useLoaderData<typeof loader>();
 
   return (
     <html lang="en">
@@ -65,10 +55,11 @@ export default function App() {
         <link rel="icon" href="https://fav.farm/🤘" />
         <Links />
       </head>
-      <body className={bodyClassNames}>
-        <Outlet context={{ theme }} />
+      <body>
+        <Outlet />
         <ScrollRestoration />
         <script
+          // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{
             __html: `window.ENV = ${JSON.stringify(ENV)}`,
           }}

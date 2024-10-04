@@ -6,7 +6,8 @@
     "**/.server/**/*.tsx",
     "**/.client/**/*.ts",
     "**/.client/**/*.tsx",
-    ".storybook/**/**.ts"
+    ".storybook/**/**.ts",
+    ".eslintrc.cjs"
   ],
   "exclude": ["node_modules", "/app/_boilerplate"],
   "compilerOptions": {

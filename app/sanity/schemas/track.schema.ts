@@ -1,7 +1,6 @@
 import { defineField, defineType } from "sanity";
 
 import Duration from "~/sanity/components/Duration/Duration";
-import { secondsToMinutes } from "~/utils/secondsToMinutes";
 
 export const trackSchema = defineType({
   name: "track",
@@ -21,16 +20,4 @@ export const trackSchema = defineType({
       },
     }),
   ],
-  preview: {
-    select: {
-      title: "title",
-      duration: "duration",
-    },
-    prepare({ title, duration }) {
-      return {
-        title,
-        subtitle: secondsToMinutes(duration),
-      };
-    },
-  },
 });
