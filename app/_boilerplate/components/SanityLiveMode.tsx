@@ -1,7 +1,7 @@
 import { useLiveMode } from "@sanity/react-loader";
 
 import { client } from "~/sanity/api/client";
-import { STUDIO_BASEPATH } from "~/sanity/constants";
+import { STUDIO_BASEPATH } from "~/sanity/sanity.studio";
 
 const liveClient = client.withConfig({
   stega: {

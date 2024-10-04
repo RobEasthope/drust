@@ -1,7 +1,7 @@
 import * as queryStore from "@sanity/react-loader";
 
 import { client } from "~/sanity/api/client";
-// import {STUDIO_BASEPATH} from '~/sanity/constants'
+// import {STUDIO_BASEPATH} from '~/sanity/sanity.studio'
 
 // In a perfect world, these could be dynamic based on the Request
 // But because middleware hasn't landed in Remix
