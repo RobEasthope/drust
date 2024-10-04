@@ -5,7 +5,7 @@ module.exports = {
     "@thoughtbot/eslint-config/typescript",
     "prettier",
   ],
-  plugins: ["simple-import-sort"],
+  plugins: ["prettier", "simple-import-sort"],
   rules: {
     "simple-import-sort/imports": "warn",
     "simple-import-sort/exports": "warn",
