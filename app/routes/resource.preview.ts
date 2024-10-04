@@ -44,6 +44,7 @@ export const loader = async ({ request }: LoaderFunctionArgs) => {
   }
 
   const session = await getSession(request.headers.get("Cookie"));
+  // eslint-disable-next-line @typescript-eslint/await-thenable
   await session.set("projectId", client.config().projectId);
 
   return redirect(redirectTo, {
