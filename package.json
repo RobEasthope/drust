@@ -4,9 +4,9 @@
   "sideEffects": false,
   "type": "module",
   "scripts": {
-    "predev": "npm run sanity-typegen",
+    "predev": "pnpm run sanity-typegen",
     "dev": "remix vite:dev",
-    "prebuild": "npm run sanity-typegen",
+    "prebuild": "pnpm run sanity-typegen",
     "build": "remix vite:build",
     "format": "npx prettier --write .",
     "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
