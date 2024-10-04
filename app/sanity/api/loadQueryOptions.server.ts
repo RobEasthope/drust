@@ -1,6 +1,6 @@
 import type { loadQuery } from "@sanity/react-loader";
 
-import { client } from "~/sanity/client";
+import { client } from "~/sanity/api/client";
 import { STUDIO_BASEPATH } from "~/sanity/constants";
 import { getSession } from "~/sessions";
 

@@ -4,8 +4,8 @@ import { useQuery } from "@sanity/react-loader";
 
 import { Records } from "~/components/Records";
 import type { loader as layoutLoader } from "~/routes/_website";
-import { loadQuery } from "~/sanity/loader.server";
-import { loadQueryOptions } from "~/sanity/loadQueryOptions.server";
+import { loadQuery } from "~/sanity/api/loader.server";
+import { loadQueryOptions } from "~/sanity/api/loadQueryOptions.server";
 import { RECORDS_QUERY } from "~/sanity/sanity.queries";
 import type { RecordStub } from "~/types/record";
 import { recordStubsZ } from "~/types/record";

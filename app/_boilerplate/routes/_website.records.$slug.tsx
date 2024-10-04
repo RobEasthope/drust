@@ -10,9 +10,9 @@ import { useQuery } from "@sanity/react-loader";
 import { Record } from "~/components/Record";
 import type { loader as layoutLoader } from "~/routes/_website";
 import { OG_IMAGE_HEIGHT, OG_IMAGE_WIDTH } from "~/routes/resource.og";
-import { client } from "~/sanity/client";
-import { loadQuery } from "~/sanity/loader.server";
-import { loadQueryOptions } from "~/sanity/loadQueryOptions.server";
+import { client } from "~/sanity/api/client";
+import { loadQuery } from "~/sanity/api/loader.server";
+import { loadQueryOptions } from "~/sanity/api/loadQueryOptions.server";
 import { RECORD_QUERY } from "~/sanity/sanity.queries";
 import { type RecordDocument, recordZ } from "~/types/record";
 
