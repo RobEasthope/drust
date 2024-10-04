@@ -31,5 +31,6 @@ module.exports = {
     ".gitignore",
     "app/_boilerplate/",
     "!.storybook/",
+    "types/sanity.types.ts",
   ],
 };
