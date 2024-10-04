@@ -91,3 +91,7 @@ node_modules/
 
 # Storybook
 *storybook.log
+
+# Sanity Typegen
+types/sanity.types.ts
+types/sanity.schema.json
