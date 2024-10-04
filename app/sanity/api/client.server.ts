@@ -1,6 +1,6 @@
 import { createClient } from "@sanity/client";
 
-import { apiVersion, dataset, projectId } from "~/sanity/projectDetails";
+import { apiVersion, dataset, projectId } from "~/sanity/sanity.details";
 
 export const viewClient = createClient({
   projectId,

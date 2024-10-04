@@ -3,7 +3,7 @@ import type { SanityImageSource } from "@sanity/asset-utils";
 import { getImageDimensions } from "@sanity/asset-utils";
 import urlBuilder from "@sanity/image-url";
 
-import { dataset, projectId } from "~/sanity/projectDetails";
+import { dataset, projectId } from "~/sanity/sanity.details";
 
 type SanityImageAssetWithAlt = SanityImageSource & { alt?: string };
 
