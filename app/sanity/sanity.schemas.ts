@@ -1,7 +1,13 @@
-import { artistType } from "~/sanity/schemas/artistType";
-import { genreType } from "~/sanity/schemas/genreType";
-import { homeType } from "~/sanity/schemas/homeType";
-import { recordType } from "~/sanity/schemas/recordType";
-import { trackType } from "~/sanity/schemas/trackType";
+import { artistSchema } from "~/sanity/schemas/artist.schema";
+import { genreSchema } from "~/sanity/schemas/genre.schema";
+import { homeSchema } from "~/sanity/schemas/home.schema";
+import { recordSchema } from "~/sanity/schemas/record.schema";
+import { trackSchema } from "~/sanity/schemas/track.schema";
 
-export default [artistType, genreType, homeType, recordType, trackType];
+export default [
+  artistSchema,
+  genreSchema,
+  homeSchema,
+  recordSchema,
+  trackSchema,
+];

@@ -2,7 +2,7 @@ import { ComposeIcon, ImageIcon, MenuIcon, ThListIcon } from "@sanity/icons";
 import { Disc } from "lucide-react";
 import { defineArrayMember, defineField, defineType } from "sanity";
 
-export const recordType = defineType({
+export const recordSchema = defineType({
   name: "record",
   title: "Record",
   type: "document",

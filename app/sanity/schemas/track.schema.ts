@@ -3,7 +3,7 @@ import { defineField, defineType } from "sanity";
 import Duration from "~/sanity/components/Duration/Duration";
 import { secondsToMinutes } from "~/utils/secondsToMinutes";
 
-export const trackType = defineType({
+export const trackSchema = defineType({
   name: "track",
   title: "Track",
   type: "object",
