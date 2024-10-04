@@ -97,33 +97,4 @@ export const recordSchema = defineType({
       group: "tracks",
     }),
   ],
-  preview: {
-    select: {
-      title: "title",
-      artist: "artist.name",
-      media: "image",
-    },
-    prepare({
-      title,
-      artist,
-      media,
-    }: {
-      title: string;
-      artist: string;
-      media:
-        | string
-        | number
-        | boolean
-        | React.ReactElement
-        | Iterable<React.ReactNode>
-        | null
-        | undefined;
-    }) {
-      return {
-        title,
-        subtitle: artist,
-        media,
-      };
-    },
-  },
 });
